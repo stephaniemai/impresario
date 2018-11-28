@@ -6,7 +6,7 @@
       <p><%= @band.conditions %></p>
       <p><%= @band.price %></p>
       <iframe style="border: 0; width: 350px; height: 470px;" src="https://bandcamp.com/EmbeddedPlayer/album=184212582/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/" seamless><a href="http://canibaldandies.bandcamp.com/album/canibal-dandies">Canibal Dandies by Canibal Dandies</a></iframe>
-      <%= link_to "Book!", new_band_booking_path(@band), class: "btn btn-primary"  %>
+      <p><%= link_to "Book!", new_band_booking_path(@band), class: "btn btn-primary"  %></p>
       <p><%= link_to "Back to the artist list", bands_path  %></p>
     </div>
   </div>
