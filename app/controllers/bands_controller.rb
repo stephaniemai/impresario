@@ -6,6 +6,8 @@ class BandsController < ApplicationController
   def create
     @band = Band.new(band_params)
     @band.user = current_user
+    @band.genre = Genre.find(params[:band][:genre_id])
+    # raise
     if @band.save
       redirect_to band_path(@band)
     else
