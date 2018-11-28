@@ -13,3 +13,21 @@
 @import "layouts/index";
 @import "components/index";
 @import "pages/index";
+
+
+body {
+  background-color: #313639;
+  color: white;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+a:hover {
+  text-decoration: none;
+  color: white;
+  opacity: 0.5;
+
+}
