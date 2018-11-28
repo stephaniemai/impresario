@@ -1,0 +1,15 @@
+<div class="container">
+  <div class="row">
+    <div class="col-md-8 col-md-offset-2">
+      <h1>My Bookings</h1>
+      <ul>
+        <% @bookings.each do |booking| %>
+          <div>
+            <li><%= link_to booking.location, booking.band %></li>
+          </div>
+      <% end %>
+      </ul>
+      <p><%= link_to "Browse bands to find your next booking!", bands_path %></p>
+    </div>
+  </div>
+</div>
