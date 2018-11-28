@@ -1,11 +1,12 @@
 <div class="container">
   <div class="row">
-    <div class="col-xs-12">
+    <div class="col-md-8 col-md-offset-2">
       <h1>Détails de la réservation</h1>
       <p><%= @booking.location %></p>
       <p><%= @booking.start_date %></p>
       <p><%= @booking.end_date %></p>
       <p><%= @booking.price %></p>
+      <p><%= link_to "Back to the artist list", bands_path %></p>
     </div>
   </div>
 </div>
