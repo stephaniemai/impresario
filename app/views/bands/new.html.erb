@@ -8,6 +8,8 @@
         <%= f.input :conditions, label: "Conditions" %>
         <%= f.input :price, label: "Prix" %>
         <%= f.association :genre, input_html: { class:'select2' } %>
+        <%= f.input :image %>
+        <%= f.input :image_cache, as: :hidden %>
         <%= f.button :submit, "Créer le groupe", class: "btn-primary" %>
       <% end %>
       <p><%= link_to "Retour à la liste des artistes", bands_path %></p>
