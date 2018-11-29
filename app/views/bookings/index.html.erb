@@ -5,7 +5,7 @@
       <ul>
         <% @bookings.each do |booking| %>
           <div>
-            <li><%= link_to booking.location, booking.band %></li>
+            <li><%= link_to booking.location, booking_path(booking) %></li>
           </div>
       <% end %>
       </ul>
