@@ -1,15 +1,25 @@
 <div class="container">
   <div class="row">
     <div class="col-md-8 col-md-offset-2">
-      <h1>List of bands:</h1>
-      <ul>
-      <% @bands.each do |band| %>
-        <div>
-          <li><%= link_to band.name, band_path(band) %></li>
-        </div>
-      <% end %>
-      </ul>
-      <p><%= link_to "Add your band", new_band_path, class: "btn btn-primary" %></p>
+      <div class=box>
+        <h1>Trouver votre ville</h1>
+  <%= form_tag bands_path, method: :get do %>
+    <%= text_field_tag :query,
+      params[:query],
+      class: "form-control",
+      placeholder: "Find a band"
+    %>
+  <% end %>
+  </div>
+        <h1>List of bands:</h1>
+        <ul>
+        <% @bands.each do |band| %>
+          <div>
+            <li><%= link_to band.name, band_path(band) %></li>
+          </div>
+        <% end %>
+        </ul>
+        <p><%= link_to "Add your band", new_band_path, class: "btn btn-primary" %></p>
     </div>
   </div>
 </div>
