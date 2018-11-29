@@ -2,24 +2,39 @@
   <div class="row">
     <div class="col-md-8 col-md-offset-2">
       <div class=box>
-        <h1>Trouver votre ville</h1>
-  <%= form_tag bands_path, method: :get do %>
-    <%= text_field_tag :query,
-      params[:query],
-      class: "form-control",
-      placeholder: "Find a band"
-    %>
-  <% end %>
-  </div>
-       <h1>Listes des musiciens</h1>
-        <ul>
-        <% @bands.each do |band| %>
-          <div>
-            <li><%= link_to band.name, band_path(band) %></li>
-          </div>
+        <h1>Où cherchez-vous un musicien ?</h1>
+          <%= form_tag bands_path, method: :get do %>
+          <%= text_field_tag :query,
+          params[:query],
+          class: "form-control",
+          placeholder: "Find a band"
+          %>
         <% end %>
-        </ul>
-        <p><%= link_to "Ajouter mon groupe", new_band_path, class: "btn btn-primary" %></p>
+    </div>
+    <% if params[:query].present? %>
+      <h2>Musiciens autour de <%= params[:query]%> </h2>
+      <% else %>
+      <% end %>
     </div>
   </div>
+</div>
+<div class="container">
+    <div class="row">
+      <% @bands.each do |band| %>
+      <div class="col-xs-12 col-sm-4 ">
+        <div class="card" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)), url('https://kitt.lewagon.com/placeholder/cities/shanghai');">
+          <div class="card-category">
+            <%= band.genre.name %>
+          </div>
+          <div class="card-description">
+            <h2> <%= band.name %></h2>
+          </div>
+          <a class="card-link" href="#" ></a>
+        </div>
+      </div>
+    <% end %>
+  </div>
+</div>
+<div class= ajout_de_groupe>
+<p><%= link_to "Ajouter mon groupe", new_band_path, class: "btn btn-primary" %></p>
 </div>
