@@ -22,7 +22,7 @@ class BandsController < ApplicationController
 
   def index
     if params[:query].present?
-      @bands = Band.where(city: params[:query])
+      @bands = Band.where("city ILIKE ?", "%#{params[:query]}%")
     else
       @bands = Band.all
     end
