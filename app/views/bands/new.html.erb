@@ -8,6 +8,8 @@
         <%= f.input :conditions %>
         <%= f.input :price %>
         <%= f.association :genre, input_html: { class:'select2' } %>
+        <%= f.input :image %>
+        <%= f.input :image_cache, as: :hidden %>
         <%= f.button :submit, class: "btn-primary" %>
       <% end %>
       <p><%= link_to "Back to the artist list", bands_path %></p>
