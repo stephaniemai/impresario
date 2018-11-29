@@ -8,12 +8,14 @@
   <div class="row">
     <div class="col-xs-12 col-sm-4">
       <div class="card" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)), url('https://kitt.lewagon.com/placeholder/cities/shanghai');">
-        <div class="card-category">Popular</div>
-        <div class="card-description">
-          <h2>Le Wagon Shanghai</h2>
-          <p>Very cool city, the best</p>
+        <div class="card-category">
+          <% bands = Band.all %>
+          <% band = bands.sample %>
+          <%= band.genre %>
         </div>
-        <img class="card-user" src="https://kitt.lewagon.com/placeholder/users/tgenaitay">
+        <div class="card-description">
+          <h2> <%= band.name %></h2>
+        </div>
         <a class="card-link" href="#" ></a>
       </div>
     </div>
@@ -24,7 +26,6 @@
           <h2>Le Wagon Shanghai</h2>
           <p>Very cool city, the best</p>
         </div>
-        <img class="card-user" src="https://kitt.lewagon.com/placeholder/users/tgenaitay">
         <a class="card-link" href="#" ></a>
       </div>
     </div>
@@ -35,25 +36,11 @@
           <h2>Le Wagon Shanghai</h2>
           <p>Very cool city, the best</p>
         </div>
-        <img class="card-user" src="https://kitt.lewagon.com/placeholder/users/tgenaitay">
         <a class="card-link" href="#" ></a>
       </div>
     </div>
   </div>
 </div>
-<!-- <div class="container">
-  <div class="row">
-    <div class="col-md-4 col-md-offset-2">
-      <div><h4>Musiciens, concentrez-vous sur votre passion, votre métier.</h4>
-        <p>Impresario s'occupe de vous et facilite votre visibilité, prend en charge vos déclarations administratives, promeut votre présence sur les réseaux sociaux
-        </p>
-      </div>
-      <div><h4>Organisateurs, respirez.</h4>
-        <p>
-          Impresario vous garantit un prix fixe et connu, des prestations délimitées et vous assure en cas d'annulation. Terminé, les mauvaises surprises de dernière minute. Profitez enfin de votre événement.
-        </p>
-      </div>
-    </div>
-  </div>
-</div>
--->
+
+
+
