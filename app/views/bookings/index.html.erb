@@ -1,7 +1,7 @@
 <div class="container">
   <div class="row">
     <div class="col-md-8 col-md-offset-2">
-      <h1>My Bookings</h1>
+      <h1>Mes réservations</h1>
       <ul>
         <% @bookings.each do |booking| %>
           <div>
@@ -9,7 +9,7 @@
           </div>
       <% end %>
       </ul>
-      <p><%= link_to "Browse bands to find your next booking!", bands_path %></p>
+      <p><%= link_to "Cherchez un groupe pour animer votre prochaine soirée !", bands_path %></p>
     </div>
   </div>
 </div>
