@@ -6,13 +6,11 @@
 </div>
 <div class="container">
   <div class="row">
+    <% @bands.each do |band| %>
     <div class="col-xs-12 col-sm-4">
-      <div class="card" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)), url('https://kitt.lewagon.com/placeholder/cities/shanghai');">
+      <div class="card" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)), url( <%= cl_image_path band.image %>);">
         <div class="card-category">
-          <% bands = Band.all %>
-          <% band = bands.sample %>
-          <% genre = Genre.where(id: band.genre_id) %>
-          <%= genre[0].name %>
+          <%= band.genre.name %>
         </div>
         <div class="card-description">
           <h2> <%= band.name %></h2>
@@ -20,34 +18,7 @@
         <a class="card-link" href="#" ></a>
       </div>
     </div>
-    <div class="col-xs-12 col-sm-4">
-      <div class="card" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)), url('https://kitt.lewagon.com/placeholder/cities/shanghai');">
-        <div class="card-category">
-          <% bands = Band.all %>
-          <% band = bands.sample %>
-          <% genre = Genre.where(id: band.genre_id) %>
-          <%= genre[0].name %>
-        </div>
-        <div class="card-description">
-          <h2> <%= band.name %></h2>
-        </div>
-        <a class="card-link" href="#" ></a>
-      </div>
-    </div>
-    <div class="col-xs-12 col-sm-4">
-      <div class="card" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)), url('https://kitt.lewagon.com/placeholder/cities/shanghai');">
-        <div class="card-category">
-          <% bands = Band.all %>
-          <% band = bands.sample %>
-          <% genre = Genre.where(id: band.genre_id) %>
-          <%= genre[0].name %>
-        </div>
-        <div class="card-description">
-          <h2> <%= band.name %></h2>
-        </div>
-        <a class="card-link" href="#" ></a>
-      </div>
-    </div>
+    <% end %>
   </div>
 </div>
 
