@@ -28,16 +28,17 @@ Genre.create(name: "Blues")
 Genre.create(name: "Variété")
 
 
-Band.create(name:"Los Fralibos",city:"Marseille",conditions:"", user_id: 1,genre_id: 1, remote_image_url:"https://img.cdandlp.com/2018/06/imgL/1139048260.jpg")
-Band.create(name:"Digital Village",city:"Marseille",conditions:"", user_id: 2,genre_id: 4, remote_image_url:"https://img.cdandlp.com/2018/04/imgL/119125564.jpg")
-Band.create(name:"Les Bouchons",city:"Lyon",conditions:"", user_id: 3,genre_id: 16, remote_image_url:"https://lemballageecologique.com/wp-content/uploads/2011/04/bouchons-de-liege-1.jpg")
-Band.create(name:"Max Kansas City Band",city:"Marseille",conditions:"", user_id: 4,genre_id: 1, remote_image_url:"https://image.spreadshirtmedia.com/image-server/v1/mp/products/T210A2MPA3176PT17X0Y4D1017876395FS3464/views/1,width=378,height=378,appearanceId=2,backgroundColor=F2F2F2,modelId=1543,crop=list,version=1542187553/max-s-kansas-city-retro-american-punk-70s-punk-cbg-men-s-t-shirt.jpg")
-Band.create(name:"Clouzot",city:"Lille",conditions:"", user_id: 5,genre_id: 1, remote_image_url:"https://my.zikinf.com/_gfx/pochettes/1148-1347478654l.jpg")
-Band.create(name:"Los Rancheros",city:"Clermont",conditions:"", user_id: 6,genre_id: 14, remote_image_url:"https://i.ytimg.com/vi/NOxMG845XvI/hqdefault.jpg")
-Band.create(name:"Arcelor",city:"Metz",conditions:"", user_id: 7,genre_id: 8, remote_image_url:"http://georgiamusic.org/wp-content/uploads/2017/09/Fozzy.jpg")
-Band.create(name:"Les Castafiores",city:"Marseille",conditions:"", user_id:8,genre_id: 6, remote_image_url:"https://www.amorgen-maisondesvoix.fr/wp-content/uploads/2018/09/2018-LES-CASTAFIORES-ETC..._resized_1.jpg")
-Band.create(name:"Les Huezmen",city:"Alpe d'Huez",conditions:"", user_id: 9,genre_id: 13, remote_image_url:"https://www.google.com/search?client=firefox-b&biw=1440&bih=723&tbm=isch&sa=1&ei=NA0AXLSDOMSaa6iMvMgH&q=les+huezmen&oq=les+huezmen&gs_l=img.3...3012.5746..6661...0.0..0.489.1794.4j4j2j0j1......0....1..gws-wiz-img.......0j35i39j0i8i30j0i24j0i10i24.S9MSU2veq-A#imgrc=_6JN42Y-9VYgKM:")
-Band.create(name:"Swing Girls",city:"Marseille",conditions:"", user_id: 10,genre_id: 2, remote_image_url:"https://www.kanpai.fr/sites/default/files/uploads/2008/07/swing-girls.jpg")
+
+Band.create(price:"1000",name:"Los Fralibos",city:"Marseille",conditions:"", user_id: 1,genre_id: 1, remote_image_url:"https://img.cdandlp.com/2018/06/imgL/1139048260.jpg")
+Band.create(price:"2000",name:"Digital Village",city:"Marseille",conditions:"", user_id: 2,genre_id: 4, remote_image_url:"https://img.cdandlp.com/2018/04/imgL/119125564.jpg")
+Band.create(price:"3000",name:"Les Bouchons",city:"Lyon",conditions:"", user_id: 3,genre_id: 15, remote_image_url:"https://lemballageecologique.com/wp-content/uploads/2011/04/bouchons-de-liege-1.jpg")
+Band.create(price:"23456",name:"Max Kansas City Band",city:"Marseille",conditions:"", user_id: 4,genre_id: 1, remote_image_url:"https://image.spreadshirtmedia.com/image-server/v1/mp/products/T210A2MPA3176PT17X0Y4D1017876395FS3464/views/1,width=378,height=378,appearanceId=2,backgroundColor=F2F2F2,modelId=1543,crop=list,version=1542187553/max-s-kansas-city-retro-american-punk-70s-punk-cbg-men-s-t-shirt.jpg")
+Band.create(price:"23456",name:"Clouzot",city:"Lille",conditions:"", user_id: 5,genre_id: 1, remote_image_url:"https://my.zikinf.com/_gfx/pochettes/1148-1347478654l.jpg")
+Band.create(price:"23456",name:"Los Rancheros",city:"Clermont",conditions:"", user_id: 6,genre_id: 13, remote_image_url:"https://i.ytimg.com/vi/NOxMG845XvI/hqdefault.jpg")
+Band.create(price:"10",name:"Arcelor",city:"Metz",conditions:"", user_id: 7,genre_id: 8, remote_image_url:"http://georgiamusic.org/wp-content/uploads/2017/09/Fozzy.jpg")
+Band.create(price:"23456",name:"Les Castafiores",city:"Marseille",conditions:"", user_id:8,genre_id: 6, remote_image_url:"https://www.amorgen-maisondesvoix.fr/wp-content/uploads/2018/09/2018-LES-CASTAFIORES-ETC..._resized_1.jpg")
+Band.create(price:"1000000",name:"Les Huezmen",city:"Alpe d'Huez",conditions:"", user_id: 9,genre_id: 12, remote_image_url:"https://focus.levif.be/medias/11900/6092829.jpg")
+Band.create(price:"23456",name:"Swing Girls",city:"Marseille",conditions:"", user_id: 10,genre_id: 2, remote_image_url:"https://www.kanpai.fr/sites/default/files/uploads/2008/07/swing-girls.jpg")
 
 
 

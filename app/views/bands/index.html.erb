@@ -22,19 +22,22 @@
     <div class="row">
       <% @bands.each do |band| %>
       <div class="col-xs-12 col-sm-4 ">
-        <div class="card" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)), url('https://kitt.lewagon.com/placeholder/cities/shanghai');">
+        <%= link_to band_path(band) do%>
+        <div class="card" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)), url( <%= cl_image_path band.image %>);">
           <div class="card-category">
             <%= band.genre.name %>
           </div>
           <div class="card-description">
             <h2> <%= band.name %></h2>
           </div>
-          <a class="card-link" href="#" ></a>
+          <!-- <a class="card-link" href="band_path(band)" ></a> -->
+
         </div>
+         <% end %>
       </div>
     <% end %>
   </div>
 </div>
-<div class= ajout_de_groupe>
+<div class= "ajout_de_groupe">
 <p><%= link_to "Ajouter mon groupe", new_band_path, class: "btn btn-primary" %></p>
 </div>
