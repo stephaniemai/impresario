@@ -1,11 +1,13 @@
 <div class="banner">
   <div class="banner-content">
     <h1 class="ml3">Des musiciens pour tous</h1>
+    <div> <%= link_to "Trouver un artiste", bands_path, class: "btn btn-primary cta" %></div>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
   </div>
 </div>
 <div class="container">
   <div class="row">
+    <h2>Artistes de la semaine</h2>
     <% @bands.each do |band| %>
     <div class="col-xs-12 col-sm-4">
       <%= link_to band_path(band) do%>
@@ -22,17 +24,16 @@
     <% end %>
   </div>
 </div>
-<div class="degrade">
+<div class="container degrade">
   <div class="text">
-    <div class="row">
-      <div class="col-xs-12 col-sm-6 text-card" style="text-align: center;">
-        <h2>title</h2>
-        <p>lorem ipsum</p>
-      </div>
-      <div class="col-xs-12 col-sm-6 text-card" style="text-align: center;">
-        <h2>title</h2>
-        <p>lorem ipsum</p>
-      </div>
+  <div class="row">
+    <div class="col-xs-12 col-sm-6 text-card" style="text-align: center;">
+      <h2>Artiste !</h2>
+      <p>En quelques clics... <br>Mettez vos prestations et disponibilités à disposition des organisateurs d'évènements. <br>Gérez la partie administrative avec les documents-types et... <br>Concentrez-vous sur la musique! <br><br>Créez une page pour chaque groupe dont vous êtes le leader avec le détail des prestations proposées (nombre de musiciens, genre musical, répertoire...) et les conditions (cachets, défraiements, régies, catering).<br> Editez facilement, pour chaque prestation les déclarations (intermittence ou G.U.S.O., S.A.C.E.M., les contrats des musiciens...). </p>
+    </div>
+    <div class="col-xs-12 col-sm-6 text-card" style="text-align: center;">
+      <h2>Organisateur !</h2>
+      <p>Tous les artistes de votre région et d'ailleurs, leur style, leurs conditions et disponbilités. <br><br> Créez votre compte et accédez à une multitude de groupes, leurs fiches artistes, des extraits audio et vidéo. Tous les éléments nécessaires pour dessiner sereinement un programme sur mesure. Éditez facilement contrats et déclarations diverses... <br> Booker un groupe n'a jamais été aussi simple!</p>
     </div>
   </div>
 </div>

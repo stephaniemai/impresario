@@ -34,7 +34,11 @@ a:hover {
 .degrade {
     background-image: linear-gradient(to bottom, rgba(45,54,57,0), white);
     width: auto;
-    height: 400px;
+    height: 600px;
+}
+
+.container {
+  margin-bottom: 0!important;
 }
 
 .text {
