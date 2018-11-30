@@ -28,6 +28,7 @@ Genre.create(name: "Blues")
 Genre.create(name: "Variété")
 
 
+
 Band.create(price:"1000",name:"Los Fralibos",city:"Marseille",conditions:"", user_id: 1,genre_id: 1, remote_image_url:"https://img.cdandlp.com/2018/06/imgL/1139048260.jpg")
 Band.create(price:"2000",name:"Digital Village",city:"Marseille",conditions:"", user_id: 2,genre_id: 4, remote_image_url:"https://img.cdandlp.com/2018/04/imgL/119125564.jpg")
 Band.create(price:"3000",name:"Les Bouchons",city:"Lyon",conditions:"", user_id: 3,genre_id: 15, remote_image_url:"https://lemballageecologique.com/wp-content/uploads/2011/04/bouchons-de-liege-1.jpg")
