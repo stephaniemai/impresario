@@ -30,3 +30,17 @@ a:hover {
   color: white;
   opacity: 0.5;
 }
+
+.degrade {
+    background-image: linear-gradient(to bottom, rgba(45,54,57,0), white);
+    width: auto;
+    height: 400px;
+}
+
+.text {
+  height: 300px;
+}
+
+.text-card {
+
+}
