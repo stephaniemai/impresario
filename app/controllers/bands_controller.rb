@@ -2,6 +2,7 @@ class BandsController < ApplicationController
 
   def show
     @band = Band.find(params[:id])
+    authorize @band
   end
 
   def create
@@ -21,6 +22,7 @@ class BandsController < ApplicationController
   end
 
   def index
+    @bands = policy_scope(Band).order(created_at: :desc)
     if params[:query].present?
       @bands = Band.where("city ILIKE ?", "%#{params[:query]}%")
     else
