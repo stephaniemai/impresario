@@ -2,14 +2,12 @@ class BookingsController < ApplicationController
 
   def new
     @booking = Booking.new
-    authorize @booking
     @band = Band.find(params[:band_id])
     @user = current_user.id
   end
 
   def create
     @booking = Booking.new(booking_params)
-    authorize @booking
     @booking.user = current_user
     @booking.band = Band.find(params[:band_id])
 
