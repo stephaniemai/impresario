@@ -39,6 +39,7 @@ a:hover {
 
 .container {
   margin-bottom: 0!important;
+  min-height: 500px;
 }
 
 .text {
@@ -53,4 +54,8 @@ a:hover {
 text-align: center;
 margin-bottom: 50px;
 margin-top: 200px;
+}
+
+.500px {
+  height: 500px!important;
 }
